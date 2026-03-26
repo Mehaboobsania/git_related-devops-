@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Justice K · Portfolio</title>
+  <title>Sania · Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -31,7 +32,6 @@
       overflow-x: hidden;
     }
 
-    /* ── NAV ── */
     nav {
       position: fixed; top: 0; left: 0; right: 0;
       z-index: 100;
@@ -56,7 +56,6 @@
     }
     .nav-links a:hover { color: var(--text); }
 
-    /* ── HERO ── */
     .hero {
       min-height: 100vh;
       display: flex; align-items: center;
@@ -125,7 +124,6 @@
     }
     .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
 
-    /* ── SECTIONS ── */
     section { padding: 5rem 5%; }
     .section-label {
       font-size: 0.75rem; font-weight: 500;
@@ -139,7 +137,6 @@
       margin-bottom: 3rem;
     }
 
-    /* ── ABOUT ── */
     .about-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -168,7 +165,6 @@
     }
     .stat-label { font-size: 0.85rem; color: var(--muted); margin-top: 0.2rem; }
 
-    /* ── PROJECTS ── */
     #projects { background: var(--surface); }
     .projects-grid {
       display: grid;
@@ -196,7 +192,6 @@
     }
     .card-link:hover { text-decoration: underline; }
 
-    /* ── CONTACT ── */
     .contact-box {
       max-width: 560px; margin: 0 auto;
       background: var(--surface);
@@ -205,10 +200,6 @@
       padding: 3rem;
       text-align: center;
     }
-    .contact-box p { color: var(--muted); margin-bottom: 2rem; }
-    .contact-links { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-
-    /* ── FOOTER ── */
     footer {
       text-align: center;
       padding: 2rem 5%;
@@ -216,13 +207,11 @@
       color: var(--muted); font-size: 0.85rem;
     }
 
-    /* ── ANIMATIONS ── */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(22px); }
       to   { opacity: 1; transform: translateY(0); }
     }
 
-    /* ── RESPONSIVE ── */
     @media (max-width: 720px) {
       .about-grid { grid-template-columns: 1fr; gap: 2rem; }
       .nav-links { display: none; }
@@ -231,9 +220,8 @@
 </head>
 <body>
 
-  <!-- NAV -->
   <nav>
-    <a href="#" class="logo">Justice K.</a>
+    <a href="#" class="logo">Sania</a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -241,11 +229,10 @@
     </ul>
   </nav>
 
-  <!-- HERO -->
   <section class="hero">
     <div class="hero-inner">
       <div class="badge">👋 Available for work</div>
-      <h1>Hi, I'm <span>Justice K</span><br/>I build things for the web.</h1>
+      <h1>Hi, I'm <span>Sania</span><br/>I build things for the web.</h1>
       <p>A passionate developer crafting clean, fast, and user-friendly digital experiences. I love turning ideas into reality through code.</p>
       <div class="btn-group">
         <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -254,84 +241,8 @@
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <p class="section-label">About Me</p>
-    <h2>Who I Am</h2>
-    <div class="about-grid">
-      <div class="about-text">
-        <p>I'm a frontend developer with a passion for building beautiful, accessible, and performant web applications. I enjoy working at the intersection of design and engineering.</p>
-        <p>When I'm not coding, you can find me exploring new technologies, contributing to open source, or enjoying a good cup of coffee.</p>
-        <div class="skills">
-          <span class="skill-tag">HTML</span>
-          <span class="skill-tag">CSS</span>
-          <span class="skill-tag">JavaScript</span>
-          <span class="skill-tag">React</span>
-          <span class="skill-tag">Node.js</span>
-          <span class="skill-tag">Git</span>
-          <span class="skill-tag">Figma</span>
-        </div>
-      </div>
-      <div class="about-card">
-        <div class="stat">
-          <div class="stat-num">3+</div>
-          <div class="stat-label">Years of Experience</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">20+</div>
-          <div class="stat-label">Projects Completed</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">10+</div>
-          <div class="stat-label">Happy Clients</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <p class="section-label">My Work</p>
-    <h2>Featured Projects</h2>
-    <div class="projects-grid">
-      <div class="card">
-        <div class="card-icon">🛍️</div>
-        <h3>E-Commerce Store</h3>
-        <p>A fully responsive online store with cart functionality, product filters, and smooth checkout flow.</p>
-        <a href="#" class="card-link">View Project →</a>
-      </div>
-      <div class="card">
-        <div class="card-icon">📊</div>
-        <h3>Dashboard UI</h3>
-        <p>A modern analytics dashboard with real-time charts, data tables, and dark/light mode toggle.</p>
-        <a href="#" class="card-link">View Project →</a>
-      </div>
-      <div class="card">
-        <div class="card-icon">🌍</div>
-        <h3>Travel Blog</h3>
-        <p>A beautiful travel blog with CMS integration, image galleries, and optimised performance.</p>
-        <a href="#" class="card-link">View Project →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="contact-box">
-      <p class="section-label" style="text-align:center">Contact</p>
-      <h2 style="margin-bottom:1rem">Let's Work Together</h2>
-      <p>Have a project in mind or just want to say hi? My inbox is always open. I'll get back to you as soon as possible!</p>
-      <div class="contact-links">
-        <a href="mailto:justicek@email.com" class="btn btn-primary">✉️ Email Me</a>
-        <a href="https://github.com/justicek" target="_blank" class="btn btn-outline">GitHub</a>
-        <a href="https://linkedin.com/in/justicek" target="_blank" class="btn btn-outline">LinkedIn</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
   <footer>
-    <p>© 2026 Justice K · Built with HTML & CSS · Hosted on GitHub Pages</p>
+    <p>© 2026 Sania · Built with HTML & CSS · Hosted on GitHub Pages</p>
   </footer>
 
 </body>
