@@ -5,10 +5,10 @@
     "infra": "bin/infra.js"
   },
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w",
-    "test": "jest",
-    "cdk": "cdk"
+  "test": "jest",
+  "build": "tsc",
+  "start": "node server.js",
+  "dev": "nodemon server.js"
   },
   "devDependencies": {
     "@types/jest": "^30",
